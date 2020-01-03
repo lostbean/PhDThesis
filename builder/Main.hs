@@ -2,6 +2,8 @@
 import Development.Shake
 import Development.Shake.Command
 import Development.Shake.FilePath
+import Network.Wai.Handler.Warp (run)
+import Network.Wai.Application.Static
 
 type Container = String
 
@@ -32,6 +34,12 @@ runDockerCmd container dockerCmds entryPointCmds = do
     let dockerCmds' = words . unwords $ dockerCmds
     let baseCmds = ["run", "--volume", volume, "--user", user, container]
     command_ [] "docker" $ baseCmds ++ dockerCmds' ++ entryPointCmds
+
+serveFiles :: FilePath -> Action ()
+serveFiles dir = liftIO $ do
+    let port = 8800
+    putStrLn $ "Serving files on port " ++ show port
+    run port (staticApp (defaultFileServerSettings dir))
 
 getFlags :: Action [String]
 getFlags = do
@@ -69,6 +77,13 @@ main = shakeArgs shakeOptions{shakeFiles="html"} $ do
     phony "clean" $ do
         putInfo "Cleaning files in html"
         removeFilesAfter "html" ["//*"]
+
+    phony "singlepage" $ do
+        need ["html/fullpage.html"]
+
+    phony "test" $ do
+        need ["singlepage"]
+        serveFiles "html"
 
     "html/fullpage.html" %> \out -> do
         mds <- getDirectoryFiles "" ["//*.md"]
