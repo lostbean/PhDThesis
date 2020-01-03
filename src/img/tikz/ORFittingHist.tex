@@ -1,0 +1,27 @@
+\documentclass[crop,tikz]{standalone}
+\usepackage{pgfplots}
+\begin{document}
+
+\begin{tikzpicture}[scale = 1]
+\begin{axis}[width=\textwidth, height=0.7\textwidth,
+	ybar, bar width=7pt, enlargelimits=0.1,
+	ylabel={\footnotesize frequency},
+	xlabel={\footnotesize angular deviation (deg)},
+	legend style={legend columns=-1}]
+
+\addplot table [x, y, col sep=semicolon] {../../data/ausrec/histo-nomark-MRA(7-a)-KS.csv};
+\addplot table [x, y, col sep=semicolon] {../../data/ausrec/histo-nomark-MRA(7-a)-fitted.csv};
+
+\addplot[blue,sharp plot,very thick, update limits=false] coordinates {(3.6,0) (3.6,15000)};        \node [pin=0:{\tiny KS},fill=blue,circle,scale=0.3] at (axis cs:3.6,1.1e4) {};
+\addplot[red,sharp plot,very thick, update limits=false] coordinates {(2.6,0) (2.6,15000)};        
+\node [pin=200:{\tiny\begin{tabular}{c} optimized\\(avg) \end{tabular}}
+	,fill=red,circle,scale=0.3] at (axis cs:2.6,1e4) {};
+
+\addplot[black,sharp plot,very thick, update limits=false]
+	coordinates {(2.3,0) (2.3,15000)};
+\node [pin=120:{\tiny\begin{tabular}{c} optimized\\(on GB) \end{tabular}}         , 	fill=black,circle,scale=0.3] at (axis cs:2.3,1e4) {};
+\legend{KS,optimized}
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
