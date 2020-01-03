@@ -47,7 +47,14 @@ getFlags = do
     let _FOOT_NOTE_HTML = "templates/footer.html"
     let _HEADER_HTML = "templates/header.html"
     let _NAV_HTML = "html/navigation.html"
-    need [_CUSTOM_HTML, _FOOT_NOTE_HTML, _HEADER_HTML, _NAV_HTML] 
+    let _ALL_CSS = "html/all.css"
+    need
+        [ _CUSTOM_HTML
+        , _FOOT_NOTE_HTML
+        , _HEADER_HTML
+        , _NAV_HTML
+        , _ALL_CSS
+        ] 
     return
         [ "--standalone"
         , "--from markdown"
@@ -70,7 +77,7 @@ navFlags =
 
 main :: IO ()
 main = shakeArgs shakeOptions{shakeFiles="html"} $ do
-    want ["html/fullpage.html"]
+    want ["singlepage"]
 
     phony "imgConverter" buildDocker
 
@@ -110,3 +117,8 @@ main = shakeArgs shakeOptions{shakeFiles="html"} $ do
         let pdf = out -<.> "pdf" 
         need [pdf]
         runPdf2Svg [] pdf out
+
+    "html/all.css" %> \out -> do
+        baseCSS   <- readFileLines "css/bootstrap.min.css"
+        screenCSS <- readFileLines "css/screen.css"
+        writeFileLines out (baseCSS ++ screenCSS)
