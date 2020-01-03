@@ -1,0 +1,72 @@
+\documentclass[crop,tikz]{standalone}
+\usepackage{pgfplots}
+\usepackage{tikz-3dplot}
+\begin{document}
+
+% Set the plot display orientation
+% Syntax: \tdplotsetdisplay{\theta_d}{\phi_d}
+\tdplotsetmaincoords{60}{140}
+
+\pgfmathsetmacro{\zRot}{20}
+\pgfmathsetmacro{\yRot}{20}
+\pgfmathsetmacro{\xRot}{20}
+
+\begin{tikzpicture}[scale=2.5, tdplot_main_coords]
+
+  \matrix[column sep=10mm, row sep=10mm] {
+  {
+    % Set origin of main (body) coordinate system
+    \coordinate (O) at (0,0,0);
+
+    % Draw main coordinate system
+    \tdplotsetrotatedcoords{0}{0}{0}
+    \draw[thick,red, ,->] (0,0,0) -- (1,0,0) node[anchor=north east]{$y_{A}$};
+    \draw[thick,red, ,->] (0,0,0) -- (0,1,0) node[anchor=north west]{$x_{A}$};
+    \draw[thick,red, ,->] (0,0,0) -- (0,0,1) node[anchor=south]{$z_{A}$};
+    \tdplotdrawarc[->,color=gray]{(0,0,0.7)}{0.2}{90}{450}{anchor=north east,color=gray}{$\varphi_{1}$}
+
+    % Intermediate frame 1
+    \tdplotsetrotatedcoords{\zRot}{0}{0}
+    \draw[tdplot_rotated_coords,->, blue] (0,0,0) -- (1,0,0) node[anchor=west]{$y'$};
+    \draw[tdplot_rotated_coords,->, blue] (0,0,0) -- (0,1,0) node[anchor=west]{$x'$};
+    \draw[tdplot_rotated_coords,->, blue] (0,0,0) -- (0,0,1) node[anchor=west]{$z'$};
+  }
+&
+  {
+    % Intermediate frame 1
+    \tdplotsetrotatedcoords{\zRot}{0}{0}
+    \draw[tdplot_rotated_coords,->, blue] (0,0,0) -- (1,0,0) node[anchor=south]{$y'$};
+    \draw[tdplot_rotated_coords,->, blue] (0,0,0) -- (0,1,0) node[anchor=west]{$x'$};
+    \draw[tdplot_rotated_coords,->, blue] (0,0,0) -- (0,0,1) node[anchor=west]{$z'$};
+
+    \tdplotsetrotatedcoords{\zRot}{0}{90}
+    \tdplotsetrotatedthetaplanecoords{90}
+    \tdplotdrawarc[tdplot_rotated_coords,<-,color=gray]{(0,0,-0.7)}{0.2}{-20}{340}{anchor=north,color=gray}{$\Phi$}
+
+    \tdplotsetrotatedcoords{\zRot}{\yRot}{0}
+    \draw[,tdplot_rotated_coords,->, green] (0,0,0) -- (1,0,0) node[anchor=north]{$y''$};
+    \draw[,tdplot_rotated_coords,->, green] (0,0,0) -- (0,1,0) node[anchor=north west]{$x''$};
+    \draw[,tdplot_rotated_coords,->, green] (0,0,0) -- (0,0,1) node[anchor=north east]{$z''$};
+
+  }
+&
+  {
+    %% Intermediate frame 2
+    \tdplotsetrotatedcoords{\zRot}{\yRot}{0}
+    \draw[,tdplot_rotated_coords,->, green] (0,0,0) -- (1,0,0) node[anchor=east]{$y''$};
+    \draw[,tdplot_rotated_coords,->, green] (0,0,0) -- (0,1,0) node[anchor=west]{$x''$};
+    \draw[,tdplot_rotated_coords,->, green] (0,0,0) -- (0,0,1) node[anchor=east]{$z''$};
+
+    \tdplotdrawarc[tdplot_rotated_coords,->,color=gray]{(0,0,0.6)}{0.2}{0}{350}{anchor=west,color=gray}{$\varphi_{2}$}
+
+    % Rotate to final frame
+    \tdplotsetrotatedcoords{\zRot}{\yRot}{\xRot}
+    \draw[thick,tdplot_rotated_coords,->, cyan] (0,0,0) -- (1,0,0) node[anchor=west]{$y_{B}$};
+    \draw[thick,tdplot_rotated_coords,->, cyan] (0,0,0) -- (0,1,0) node[anchor=west]{$x_{B}$};
+    \draw[thick,tdplot_rotated_coords,->, cyan] (0,0,0) -- (0,0,1) node[anchor=south]{$z_{B}$};
+  }
+\\
+};
+\end{tikzpicture}
+
+\end{document}

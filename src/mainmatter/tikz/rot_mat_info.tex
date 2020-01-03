@@ -1,0 +1,42 @@
+\documentclass[crop,tikz]{standalone}
+\usepackage{pgfplots}
+\usepackage{tikz-3dplot}
+\begin{document}
+
+\usetikzlibrary{matrix,arrows,decorations.pathmorphing}
+
+\begin{tikzpicture}
+% les matrices
+\matrix (A) [matrix of math nodes,%
+             left delimiter  = (,%
+             right delimiter = ),
+             row sep=0.3cm,%
+             column sep=0.3cm%
+             ] at (0,0)
+{%
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33} \\
+};
+
+\draw[blue] (A-1-1.north west) rectangle (A-1-3.south east);
+\draw[blue] (A-2-1.north west) rectangle (A-2-3.south east);
+\draw[blue] (A-3-1.north west) rectangle (A-3-3.south east);
+\node(b1)[blue, right of=A-1-3, xshift=0.7cm] {[100]} edge[blue,<-] (A-1-3);
+\node(b2)[blue, right of=A-2-3, xshift=0.7cm] {[010]} edge[blue,<-] (A-2-3);
+\node(b3)[blue, right of=A-3-3, xshift=0.7cm] {[001]} edge[blue,<-] (A-3-3);
+\node at (b2) [dotted,draw,minimum width=1.3cm,minimum height=2.2cm,%
+label=right:{{\color{blue}$K_{C}$}}] {};
+
+\node (r1) at (A-2-1) [red,draw,minimum width=0.6cm,minimum height=2.2cm] {};
+\node (r2) at (A-2-2) [red,draw,minimum width=0.6cm,minimum height=2.2cm] {};
+\node (r3) at (A-2-3) [red,draw,minimum width=0.6cm,minimum height=2.2cm] {};
+\node (t1) [red, below of=r1, yshift=-0.75cm] {RD} edge[red,<-] (r1.south);
+\node (t2) [red, below of=r2, yshift=-0.75cm] {TD} edge[red,<-] (r2.south);
+\node (t3) [red, below of=r3, yshift=-0.75cm] {ND} edge[red,<-] (r3.south);
+\node at (t2) [dotted,draw,minimum width=2.9cm,minimum height=0.7cm,%
+label=below:{{\color{red}$K_{ERS}$}}] {};
+
+\end{tikzpicture}
+
+\end{document}
