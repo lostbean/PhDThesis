@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="880"
+   height="1350"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="hit&amp;run.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path3949"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         id="path3955"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.53925926"
+     inkscape:cx="440"
+     inkscape:cy="675"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="3"
+     fit-margin-left="3"
+     fit-margin-right="3"
+     fit-margin-bottom="3"
+     inkscape:snap-bbox="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="1001"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-16.056711,14.552132)">
+    <g
+       id="g3722">
+      <g
+         id="g3204">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-miterlimit:4;stroke-opacity:1"
+           d="M 305.92814,289.04174 150.92621,348.49844 72.094294,178.08786 209.80399,50.454476 373.74517,141.98331 z"
+           id="path2985"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccc" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:7.79999971, 7.79999971;stroke-dashoffset:0"
+           id="rect3756"
+           width="408.57144"
+           height="394.28571"
+           x="17.35671"
+           y="14.756019" />
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="202.87787"
+           y="90.613564"
+           id="text3758"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3760"
+             x="202.87787"
+             y="90.613564">$S$</tspan></text>
+        <path
+           sodipodi:type="arc"
+           style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path3762"
+           sodipodi:cx="83.288872"
+           sodipodi:cy="173.21872"
+           sodipodi:rx="4.1506081"
+           sodipodi:ry="5.5341444"
+           d="m 87.43948,173.21872 a 4.1506081,5.5341444 0 1 1 -8.301216,0 4.1506081,5.5341444 0 1 1 8.301216,0 z"
+           transform="matrix(0.94760843,0,0,0.71070628,16.969738,62.401246)" />
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="107.21639"
+           y="213.86597"
+           id="text3764"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3766"
+             x="107.21639"
+             y="213.86597">$X_0$</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="374.62814"
+           y="389.73358"
+           id="text3273"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3275"
+             x="374.62814"
+             y="389.73358">(a)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="35.485283"
+           y="56.590729"
+           id="text3074"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3076"
+             x="35.485283"
+             y="56.590729">$R$</tspan></text>
+      </g>
+      <g
+         id="g3238">
+        <path
+           sodipodi:nodetypes="cccccc"
+           inkscape:connector-curvature="0"
+           id="path3782"
+           d="M 774.75669,289.04174 619.75476,348.49844 540.92284,178.08786 678.63254,50.454476 842.57372,141.98331 z"
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-miterlimit:4;stroke-opacity:1" />
+        <rect
+           y="14.756022"
+           x="486.18527"
+           height="394.28571"
+           width="408.57144"
+           id="rect3784"
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:7.79999971, 7.79999971;stroke-dashoffset:0" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3786"
+           y="88.613564"
+           x="671.70636"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="88.613564"
+             x="671.70636"
+             id="tspan3788"
+             sodipodi:role="line">$S$</tspan></text>
+        <path
+           transform="matrix(0.94760843,0,0,0.71070628,485.79829,62.401246)"
+           d="m 87.43948,173.21872 a 4.1506081,5.5341444 0 1 1 -8.301216,0 4.1506081,5.5341444 0 1 1 8.301216,0 z"
+           sodipodi:ry="5.5341444"
+           sodipodi:rx="4.1506081"
+           sodipodi:cy="173.21872"
+           sodipodi:cx="83.288872"
+           id="path3790"
+           style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           sodipodi:type="arc" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3792"
+           y="215.86598"
+           x="580.04492"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="215.86598"
+             x="580.04492"
+             id="tspan3794"
+             sodipodi:role="line">$X_0$<tspan
+   id="tspan3796"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O" /></tspan></text>
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="M 484.0909,224.06369 892.51075,30.368626"
+           id="path3936"
+           inkscape:connector-curvature="0" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3281"
+           y="389.73358"
+           x="843.19958"
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="389.73358"
+             x="843.19958"
+             id="tspan3283"
+             sodipodi:role="line">(b)</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text3076"
+           y="56.590729"
+           x="505.19955"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="56.590729"
+             x="505.19955"
+             id="tspan3078"
+             sodipodi:role="line">$R$</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3682">
+      <g
+         id="g3218">
+        <path
+           sodipodi:nodetypes="cccccc"
+           inkscape:connector-curvature="0"
+           id="path3800"
+           d="M 305.92814,750.10006 150.9262,809.55676 72.094294,639.14618 209.80398,511.5128 373.74516,603.04163 z"
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-miterlimit:4;stroke-opacity:1" />
+        <rect
+           y="475.8143"
+           x="17.35671"
+           height="394.28571"
+           width="408.57144"
+           id="rect3802"
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:7.79999971, 7.79999971;stroke-dashoffset:0" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text3804"
+           y="549.67188"
+           x="202.87787"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="549.67188"
+             x="202.87787"
+             id="tspan3806"
+             sodipodi:role="line">$S$</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text3810"
+           y="674.92432"
+           x="105.21639"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="674.92432"
+             x="105.21639"
+             id="tspan3812"
+             sodipodi:role="line">$X_0$<tspan
+   id="tspan3814"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O" /></tspan></text>
+        <path
+           inkscape:connector-curvature="0"
+           id="path3938"
+           d="M 19.267579,682.91161 424.06138,490.93622"
+           style="fill:none;stroke:#ff0000;stroke-width:1.48668265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.79999995;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+           d="M 95.894975,646.5672 351.07335,525.54764"
+           id="path3940"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path4580"
+           sodipodi:cx="83.288872"
+           sodipodi:cy="173.21872"
+           sodipodi:rx="4.1506081"
+           sodipodi:ry="5.5341444"
+           d="m 87.43948,173.21872 c 0,3.05642 -1.858291,5.53414 -4.150608,5.53414 -2.292318,0 -4.150608,-2.47772 -4.150608,-5.53414 0,-3.05642 1.85829,-5.53414 4.150608,-5.53414 2.292317,0 4.150608,2.47772 4.150608,5.53414 z"
+           transform="matrix(0.94760843,0,0,0.71070628,277.98224,399.41015)" />
+        <path
+           transform="matrix(0.94760843,0,0,0.71070628,16.969738,523.45957)"
+           d="m 87.43948,173.21872 c 0,3.05642 -1.858291,5.53414 -4.150608,5.53414 -2.292318,0 -4.150608,-2.47772 -4.150608,-5.53414 0,-3.05642 1.85829,-5.53414 4.150608,-5.53414 2.292317,0 4.150608,2.47772 4.150608,5.53414 z"
+           sodipodi:ry="5.5341444"
+           sodipodi:rx="4.1506081"
+           sodipodi:cy="173.21872"
+           sodipodi:cx="83.288872"
+           id="path3808"
+           style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           sodipodi:type="arc" />
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="358.62024"
+           y="559.70093"
+           id="text4595"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4597"
+             x="358.62024"
+             y="559.70093">$X_1$<tspan
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+   id="tspan4599" /></tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text3287"
+           y="851.16217"
+           x="374.62814"
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="851.16217"
+             x="374.62814"
+             id="tspan3289"
+             sodipodi:role="line">(c)</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text3080"
+           y="517.44788"
+           x="35.485283"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="517.44788"
+             x="35.485283"
+             id="tspan3082"
+             sodipodi:role="line">$R$</tspan></text>
+      </g>
+      <g
+         id="g3253">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-miterlimit:4;stroke-opacity:1"
+           d="M 774.75669,750.10006 619.75476,809.55676 540.92284,639.14618 678.63254,511.5128 842.57372,603.04163 z"
+           id="path3818"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccccc" />
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:7.79999971, 7.79999971;stroke-dashoffset:0"
+           id="rect3820"
+           width="408.57144"
+           height="394.28571"
+           x="486.18527"
+           y="475.8143" />
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="671.70636"
+           y="549.67188"
+           id="text3822"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3824"
+             x="671.70636"
+             y="549.67188">$S$</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="581.61023"
+           y="634.27094"
+           id="text3828"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3830"
+             x="581.61023"
+             y="634.27094">$X_0$<tspan
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+   id="tspan3832" /></tspan></text>
+        <path
+           style="fill:none;stroke:#ff0000;stroke-width:1.48668265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="M 488.20258,609.9992 892.41969,803.18593"
+           id="path4601"
+           inkscape:connector-curvature="0" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path4603"
+           d="m 564.40522,646.2489 164.69149,78.71069"
+           style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)" />
+        <path
+           transform="matrix(0.94760843,0,0,0.71070628,656.44215,604.889)"
+           d="m 87.43948,173.21872 a 4.1506081,5.5341444 0 1 1 -8.301216,0 4.1506081,5.5341444 0 1 1 8.301216,0 z"
+           sodipodi:ry="5.5341444"
+           sodipodi:rx="4.1506081"
+           sodipodi:cy="173.21872"
+           sodipodi:cx="83.288872"
+           id="path4611"
+           style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           sodipodi:type="arc" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4613"
+           y="704.82202"
+           x="727.80377"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           xml:space="preserve"><tspan
+             y="704.82202"
+             x="727.80377"
+             id="tspan4615"
+             sodipodi:role="line">$X_1$<tspan
+   id="tspan4617"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O" /></tspan></text>
+        <path
+           sodipodi:type="arc"
+           style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="path3826"
+           sodipodi:cx="83.288872"
+           sodipodi:cy="173.21872"
+           sodipodi:rx="4.1506081"
+           sodipodi:ry="5.5341444"
+           d="m 87.43948,173.21872 a 4.1506081,5.5341444 0 1 1 -8.301216,0 4.1506081,5.5341444 0 1 1 8.301216,0 z"
+           transform="matrix(0.94760843,0,0,0.71070628,485.79829,523.45957)" />
+        <text
+           xml:space="preserve"
+           style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="843.19958"
+           y="851.16217"
+           id="text3291"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3293"
+             x="843.19958"
+             y="851.16217">(d)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+           x="505.19955"
+           y="517.44788"
+           id="text3084"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3086"
+             x="505.19955"
+             y="517.44788">$R$</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3658">
+      <path
+         sodipodi:nodetypes="cccccc"
+         inkscape:connector-curvature="0"
+         id="path3836"
+         d="M 540.34242,1211.1583 385.34049,1270.615 306.50858,1100.2045 444.21827,972.57107 608.15945,1064.0999 z"
+         style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-miterlimit:4;stroke-opacity:1" />
+      <rect
+         y="936.87262"
+         x="251.771"
+         height="394.28571"
+         width="408.57144"
+         id="rect3838"
+         style="fill:none;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:7.79999971, 7.79999971;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3840"
+         y="1010.7302"
+         x="437.29214"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         xml:space="preserve"><tspan
+           y="1010.7302"
+           x="437.29214"
+           id="tspan3842"
+           sodipodi:role="line">$S$</tspan></text>
+      <path
+         transform="matrix(0.94760843,0,0,0.71070628,251.38402,984.51784)"
+         d="m 87.43948,173.21872 a 4.1506081,5.5341444 0 1 1 -8.301216,0 4.1506081,5.5341444 0 1 1 8.301216,0 z"
+         sodipodi:ry="5.5341444"
+         sodipodi:rx="4.1506081"
+         sodipodi:cy="173.21872"
+         sodipodi:cx="83.288872"
+         id="path3844"
+         style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3846"
+         y="1133.9825"
+         x="343.63068"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         xml:space="preserve"><tspan
+           y="1133.9825"
+           x="343.63068"
+           id="tspan3848"
+           sodipodi:role="line">$X_0$<tspan
+   id="tspan3850"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O" /></tspan></text>
+      <path
+         inkscape:transform-center-y="-122.25211"
+         inkscape:transform-center-x="70.669708"
+         style="fill:none;stroke:#ff0000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="M 582.94353,1329.8153 355.74968,937.78347"
+         id="path4627"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:transform-center-y="-78.964832"
+         inkscape:transform-center-x="45.762512"
+         inkscape:connector-curvature="0"
+         id="path4629"
+         d="M 501.27141,1189.3733 409.74642,1031.4435"
+         style="fill:none;stroke:#000000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)" />
+      <path
+         transform="matrix(0.94760843,0,0,0.71070628,422.34619,1066.2656)"
+         d="m 87.43948,173.21872 a 4.1506081,5.5341444 0 1 1 -8.301216,0 4.1506081,5.5341444 0 1 1 8.301216,0 z"
+         sodipodi:ry="5.5341444"
+         sodipodi:rx="4.1506081"
+         sodipodi:cy="173.21872"
+         sodipodi:cx="83.288872"
+         id="path4631"
+         style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         sodipodi:type="arc" />
+      <text
+         xml:space="preserve"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         x="455.98428"
+         y="1215.4606"
+         id="text4633"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4635"
+           x="455.98428"
+           y="1215.4606">$X_1$<tspan
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+   id="tspan4637" /></tspan></text>
+      <path
+         sodipodi:type="arc"
+         style="fill:#ff0000;stroke:#000000;stroke-width:2.5999999;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="path4639"
+         sodipodi:cx="83.288872"
+         sodipodi:cy="173.21872"
+         sodipodi:rx="4.1506081"
+         sodipodi:ry="5.5341444"
+         d="m 87.43948,173.21872 a 4.1506081,5.5341444 0 1 1 -8.301216,0 4.1506081,5.5341444 0 1 1 8.301216,0 z"
+         transform="matrix(0.94760843,0,0,0.71070628,327.28166,901.7279)" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4641"
+         y="1071.5795"
+         x="373.39182"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         xml:space="preserve"><tspan
+           y="1071.5795"
+           x="373.39182"
+           id="tspan4643"
+           sodipodi:role="line">$X_2$<tspan
+   id="tspan4645"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;baseline-shift:sub;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O" /></tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3309"
+         y="1305.8496"
+         x="607.02325"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         xml:space="preserve"><tspan
+           y="1305.8496"
+           x="607.02325"
+           id="tspan3311"
+           sodipodi:role="line">(e)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"
+         x="270.0567"
+         y="978.01929"
+         id="text3088"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3090"
+           x="270.0567"
+           y="978.01929">$R$</tspan></text>
+    </g>
+  </g>
+</svg>
