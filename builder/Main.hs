@@ -19,7 +19,7 @@ runPdfLaTex cmds = runDockerCmd "blang/latex:ubuntu" (["pdflatex"] ++ cmds) . pu
 
 runPdf2Svg :: [String] -> FilePath -> FilePath -> Action ()
 runPdf2Svg cmds pdfIn svgOut = do
-    need ["imgConverter"]
+    need ["buildDockerImg"]
     runDockerCmd "img-converter:latest" (["pdf2svg"] ++ cmds) [pdfIn, svgOut]
 
 runDockerCmd :: Container -> [String] -> [FilePath] -> Action ()
@@ -76,39 +76,49 @@ navFlags =
 
 main :: IO ()
 main = shakeArgs shakeOptions{shakeFiles="html"} $ do
-    want ["singlepage"]
+    want ["build"]
 
-    phony "imgConverter" buildDocker
+    phony "buildDockerImg" buildDocker
 
     phony "clean" $ do
         putInfo "Cleaning files in html"
         removeFilesAfter "html" ["//*"]
 
-    phony "singlepage" $ do
-        need ["html/fullpage.html", "copyStatic"]
+    phony "build" $ do
+        need ["html/fullpage.html", "renderTex", "copyImages", "copyStatic"]
 
     phony "test" $ do
-        need ["singlepage"]
+        need ["build"]
         serveFiles "html"
 
     phony "copyStatic" $ do
         sts <- getDirectoryFiles "static" ["//*"]
         mapM_ (\p -> copyFileChanged ("static" </> p) ("html" </> p)) sts
 
+    phony "copyImages" $ do
+        need ["renderTex"]
+        svgs <- getDirectoryFiles "src/img" ["//*.svg", "//*.png", "//*.jpg"]
+        mapM_ (\p -> copyFileChanged ("src/img" </> p) ("html/img" </> p)) svgs
+        
+        pdfs <- getDirectoryFiles "src/img" ["//*.pdf"]
+        need ["html/img" </> p -<.> "svg" | p <- pdfs]
+
+    phony "renderTex" $ do
+        texs <- getDirectoryFiles "src" ["//*.tex"]
+        let pdfs = ["src" </> c -<.> "pdf" | c <- texs]
+        need pdfs
+
     "html/fullpage.html" %> \out -> do
-        mds <- getDirectoryFiles "" ["//*.md"]
-        texs <- getDirectoryFiles "" ["//*.tex"]
-        let svgs = [c -<.> "svg" | c <- texs]
-        need svgs
+        mds <- getDirectoryFiles "src" ["//*.md"]
         flags <- getFlags
-        runPandoc (flags ++ ["--output", out]) mds
+        runPandoc (flags ++ ["--output", out]) ["src" </> m | m <- mds]
     
     "html/navigation.html" %> \out -> do
         let nav = "navigation.md" 
         need [nav]
         runPandoc (navFlags ++ ["--output", out]) [nav]
 
-    "//*.pdf" %> \out -> do
+    "src/img/tikz//*.pdf" %> \out -> do
         let tex = out -<.> "tex" 
         let texFolder = takeDirectory tex
         need [tex]
@@ -116,8 +126,8 @@ main = shakeArgs shakeOptions{shakeFiles="html"} $ do
         removeFilesAfter texFolder ["*.aux"]
         removeFilesAfter texFolder ["*.log"]
 
-    "//*.svg" %> \out -> do
-        let pdf = out -<.> "pdf" 
+    "html/img//*.svg" %> \out -> do
+        let pdf = "src/img" </> (makeRelative "html/img" out) -<.> "pdf" 
         need [pdf]
         runPdf2Svg [] pdf out
 
