@@ -1,6 +1,5 @@
 {-# LANGUAGE ScopedTypeVariables, TypeOperators #-}
 import Development.Shake
-import Development.Shake.Command
 import Development.Shake.FilePath
 import Network.Wai.Handler.Warp (run)
 import Network.Wai.Application.Static
@@ -21,7 +20,7 @@ runPdfLaTex cmds = runDockerCmd "blang/latex:ubuntu" (["pdflatex"] ++ cmds) . pu
 runPdf2Svg :: [String] -> FilePath -> FilePath -> Action ()
 runPdf2Svg cmds pdfIn svgOut = do
     need ["imgConverter"]
-    runDockerCmd "img-converter:latest" ["pdf2svg"] [pdfIn, svgOut]
+    runDockerCmd "img-converter:latest" (["pdf2svg"] ++ cmds) [pdfIn, svgOut]
 
 runDockerCmd :: Container -> [String] -> [FilePath] -> Action ()
 runDockerCmd container dockerCmds entryPointCmds = do
@@ -86,11 +85,15 @@ main = shakeArgs shakeOptions{shakeFiles="html"} $ do
         removeFilesAfter "html" ["//*"]
 
     phony "singlepage" $ do
-        need ["html/fullpage.html"]
+        need ["html/fullpage.html", "copyStatic"]
 
     phony "test" $ do
         need ["singlepage"]
         serveFiles "html"
+
+    phony "copyStatic" $ do
+        sts <- getDirectoryFiles "static" ["//*"]
+        mapM_ (\p -> copyFileChanged ("static" </> p) ("html" </> p)) sts
 
     "html/fullpage.html" %> \out -> do
         mds <- getDirectoryFiles "" ["//*.md"]
