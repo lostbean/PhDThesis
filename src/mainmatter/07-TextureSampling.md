@@ -160,7 +160,7 @@ the target distribution composed by two overlapping normal distributions
 ($\mu_{1}=1,\;\sigma_{1}=0.5,\;\mu_{2}=5,\;\sigma_{2}=0.7$). (a) The
 initial distribution after random positioning of points. (b) Final
 distribution after RMC iterations. (c) 3D section of the resultant grain
-set. ](mainmatter/img/texsamp/fig1){width="100%"}
+set. ](/img/texsamp/fig1.svg){width="70%"}
 
 Once the grain set is defined, the following step is to create the
 texture by assigning orientations to each grain. Given a target ODF,
@@ -181,7 +181,7 @@ label="fig:recons_odf_brutal"}Texture reconstruction. (a) Target ODF
 with typical $\alpha-\gamma$ fibers obtained experimentally. (b) Initial
 ODF after random assignment of sampled orientations to grains. (c) Final
 ODF after RMC iterations. (d) Overlay of the previous three
-states.](mainmatter/img/texsamp/Fig2){width="100%"}
+states.](/img/texsamp/Fig2.svg){width="70%"}
 
 Sampling distribution
 ---------------------

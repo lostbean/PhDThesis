@@ -64,8 +64,6 @@ the same parent and involves a double OR transformation, cf.
 conditions that the proposed OR is valid, the angular deviation
 ($\Delta OR$) is equal to $0$.
 
-=\[font=\]
-
 The algorithm finds the optimized OR transformation
 ($T^{\alpha'\leftrightarrow\gamma}$) that minimizes the average angular
 deviation for all grain boundaries or for a selected subset of them. The
@@ -84,7 +82,7 @@ reconstruction algorithm on Fe-Ni alloy: (a) initial OIM before
 reconstruction, (b) retained austenite and expected prior austenite GB,
 (c) reconstruction after the first iteration and (d) second and final
 step of
-reconstruction.](mainmatter/img/ausrec/sample1/alpha+gamma "fig:"){width="1\linewidth"}\
+reconstruction.](/img/ausrec/sample1/alpha+gamma.svg){width="70%"}\
 (a)
 
 ![[\[fig:recons\]]{#fig:recons label="fig:recons"}Validation of
@@ -92,7 +90,7 @@ reconstruction algorithm on Fe-Ni alloy: (a) initial OIM before
 reconstruction, (b) retained austenite and expected prior austenite GB,
 (c) reconstruction after the first iteration and (d) second and final
 step of
-reconstruction.](mainmatter/img/ausrec/sample1/RA+GB "fig:"){width="1\linewidth"}\
+reconstruction.](/img/ausrec/sample1/RA+GB.svg){width="70%"}\
 (b)
 
 ![[\[fig:recons\]]{#fig:recons label="fig:recons"}Validation of
@@ -100,15 +98,14 @@ reconstruction algorithm on Fe-Ni alloy: (a) initial OIM before
 reconstruction, (b) retained austenite and expected prior austenite GB,
 (c) reconstruction after the first iteration and (d) second and final
 step of
-reconstruction.](mainmatter/img/ausrec/sample1/1st+GB "fig:"){width="1\linewidth"}\
+reconstruction.](/img/ausrec/sample1/1st+GB.svg){width="70%"}\
 (c)
 
 ![[\[fig:recons\]]{#fig:recons label="fig:recons"}Validation of
 reconstruction algorithm on Fe-Ni alloy: (a) initial OIM before
 reconstruction, (b) retained austenite and expected prior austenite GB,
 (c) reconstruction after the first iteration and (d) second and final
-step of
-reconstruction.](mainmatter/img/ausrec/sample1/2nd+GB "fig:"){width="1\linewidth"}\
+step of reconstruction.](/img/ausrec/sample1/2nd+GB.svg){width="70%"}\
 (d)
 
 Two strategies were employed in order to calculate the grain boundary
@@ -134,6 +131,8 @@ reference="fig:ORcomp"} compares the optimized OR for the low Nb sample
 with two theoretical ORs and one reference
 value[@miyamoto_accurate_2009] that contains comparable amount of
 carbon. The optimized OR is in good agreement with the reference value.
+
+![Fitted OR compared with theoretical KS.](/img/tikz/ORFittingHist.svg){width="70%"}
 
 Parent phase reconstruction
 ---------------------------

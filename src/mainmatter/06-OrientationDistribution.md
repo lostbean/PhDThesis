@@ -297,15 +297,11 @@ $$\frac{\partial}{\partial x}F_{1}(a,b_{1},b_{2},c;x,y)=\frac{ab_{1}}{c}F_{1}(a+
 
 ### Hyper Spherical Harmonics
 
-![Active and passive rotations on the quaternion space using HSH. The
-original orientations are:
-$s_{1}=SO^{3}\:(\nicefrac{\pi}{2},\nicefrac{\pi}{2},\nicefrac{\pi}{2})$
-and $s_{2}=SO^{3}\:(\nicefrac{\pi}{4},\nicefrac{\pi}{4},0)$. Both active
-and passive rotation are
-$SO^{3}\:(\nicefrac{-\pi}{2},\nicefrac{\pi}{2},0)$.](\string"mainmatter/img/oridist/HSH active and passive rotations\string".png){width="100%"}
+![Active and passive rotations on the quaternion space using HSH. The original orientations are:
+$s_{1}=SO^{3}\:(\nicefrac{\pi}{2},\nicefrac{\pi}{2},\nicefrac{\pi}{2})$ and
+$s_{2}=SO^{3}\:(\nicefrac{\pi}{4},\nicefrac{\pi}{4},0)$. Both active and passive rotation are
+$SO^{3}\:(\nicefrac{-\pi}{2},\nicefrac{\pi}{2},0)$.](/img/oridist/HSH active and passive rotations.png){width="70%"}
 
-![Enforcing symmetry on
-HSH.](\string"mainmatter/img/oridist/HSH symmetryzation\string".png){width="100%"}
+![Enforcing symmetry on HSH.](/img/oridist/HSH symmetryzation.png){width="70%"}
 
-[^1]: Uno il nomine integre, lo tote tempore anglo-romanic per, ma sed
-    practic philologos historiettas.
+[^1]: Uno due il nomine integre, lo tote tempore anglo-romanic per, ma sed practic philologos historiettas.
