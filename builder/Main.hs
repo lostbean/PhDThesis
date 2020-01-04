@@ -1,15 +1,13 @@
 {-# LANGUAGE ScopedTypeVariables, TypeOperators #-}
+
+import Control.Monad (unless)
 import Development.Shake
 import Development.Shake.FilePath
+import Data.List (isPrefixOf)
 import Network.Wai.Handler.Warp (run)
 import Network.Wai.Application.Static
 
 type Container = String
-
-buildDocker :: Action ()
-buildDocker = do
-    need ["Dockerfile"]
-    command_ [] "docker" ["build", "-t", "img-converter", "."]
 
 runPandoc :: [String] -> [FilePath] -> Action ()
 runPandoc = runDockerCmd "pandoc/latex:2.6"
@@ -19,7 +17,7 @@ runPdfLaTex cmds = runDockerCmd "blang/latex:ubuntu" (["pdflatex"] ++ cmds) . pu
 
 runPdf2Svg :: [String] -> FilePath -> FilePath -> Action ()
 runPdf2Svg cmds pdfIn svgOut = do
-    need ["buildDockerImg"]
+    need [".img-converter.docker.img"]
     runDockerCmd "img-converter:latest" (["pdf2svg"] ++ cmds) [pdfIn, svgOut]
 
 runDockerCmd :: Container -> [String] -> [FilePath] -> Action ()
@@ -75,10 +73,22 @@ navFlags =
     ]
 
 main :: IO ()
-main = shakeArgs shakeOptions{shakeFiles="html"} $ do
+main = shakeArgs shakeOptions
+    { shakeFiles="html"
+    , shakeChange=ChangeModtimeOrDigest
+    } $ do
+    
     want ["build"]
 
-    phony "buildDockerImg" buildDocker
+    ".*.docker.img" %> \fp -> do
+        let img = maybe (error fp) tail (stripExtension "docker.img" fp)
+        let dockerfile = img <.> "Dockerfile"
+        need [dockerfile]
+        command_ [] "docker" ["build", "-f", dockerfile, "-t", img, "."]
+        Stdout out <- cmd "docker" [ "images", "--no-trunc", "-q", img ++ ":latest" ]
+        unless (isPrefixOf "sha256:" out) $ do
+            error $ "Couldn't get a valid sha256 image hash when building " ++ dockerfile
+        writeFile' fp out
 
     phony "clean" $ do
         putInfo "Cleaning files in html"
@@ -110,6 +120,7 @@ main = shakeArgs shakeOptions{shakeFiles="html"} $ do
 
     "html/fullpage.html" %> \out -> do
         mds <- getDirectoryFiles "src" ["//*.md"]
+        need ["src" </> m | m <- mds]
         flags <- getFlags
         runPandoc (flags ++ ["--output", out]) ["src" </> m | m <- mds]
     

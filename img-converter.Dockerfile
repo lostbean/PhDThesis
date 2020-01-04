@@ -11,7 +11,6 @@ WORKDIR /pdf2svg
 
 RUN git checkout $PDF2SVG_VERSION && ./configure && make
 
-# final image
 FROM alpine:3.6
 
 RUN apk add --update-cache --virtual .fetch-deps ca-certificates openssl \

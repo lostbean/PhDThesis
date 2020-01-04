@@ -3,3 +3,4 @@
 html/
 *.aux
 *.log
+.*.docker.img
